@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+/* Style of the body */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+/* Style top nav */
+
+.navbar {
+    display: flex;
+    background-color: rgb(190, 150, 50);
+    justify-content: flex-end;
+}
+
+/* Styling the nav links */
+ .navbar a {
+     text-decoration: none;
+     color: white;
+     padding: 14px 20px;
+     text-align: center;
+     margin-top: 5px;
+ }
+
+  .login {
+     padding: 10px;
+     border-radius: 5px ;
+ }
+
+ /* change the navbar color with hover */
+ .navbar a:hover {
+     background-color: rgb(26, 22, 22);
+     color: azure;
+     border-radius: 5px;
+     
+ }
+
+ .header {
+     padding: 60px;
+     background: #1abc9c;
+     text-align: center;
+     color: beige;
+ }
+
+ /* column container */
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ /* create two unequal columns that sits next to each other */
+/* left column*/
+ .side {
+     flex: 30%;
+     background-color: #f1f1f1;
+     padding: 20px;
+ }
+
+ /* main column */
+
+ .main {
+     flex: 70px;
+     background-color: white;
+     padding: 20px;
+ }
+
+ /* image  */
+
+ .fakeimg {
+     background-color: #aaa;
+     width: 100%;
+     padding: 20px;
+ }
+
+ /* footer */
+
+ .footer {
+     padding: 20px;
+     text-align: center;
+     background: #ddd;
+ }
+
+ /* responsive layout */
+ @media screen and (max-width:700) {
+     .row, .navbar {
+         flex-direction: column;
+     }
+ }
